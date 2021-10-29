@@ -1,5 +1,17 @@
 
 $( document ).ready(function() {
+    $('.lang-toggle-dropdown').hide();
+    $('.lang-toggle-active').click(()=>{
+        $('.lang-toggle-dropdown').toggle();
+    })
+    $('.search-block').hide();
+    $('.search-open').click(()=>{
+        $('.search-block').show(200);
+    })
+    $('.search-close').click(()=>{
+        $('.search-block').hide(100);
+    })
+
     console.log( "ready!" );
     $('.main-left').slick({
         slidesToShow: 1,

@@ -314,7 +314,8 @@ header {
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
-    color: #12181F; }
+    color: #12181F;
+    position: relative; }
     @media only screen and (max-width: 767px) {
       .header-main .lang-toggle {
         top: 15px;
@@ -322,8 +323,25 @@ header {
     .header-main .lang-toggle-active {
       text-decoration: none;
       color: #12181F; }
+    .header-main .lang-toggle-item {
+      text-decoration: none;
+      color: #12181F;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .header-main .lang-toggle-item:hover {
+        background-color: #C8A27B; }
     .header-main .lang-toggle svg {
       margin-left: 3px; }
+    .header-main .lang-toggle-dropdown {
+      position: absolute;
+      top: 100%;
+      width: 52px;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      border: 2px solid #F4F6F9; }
   .header-main-right {
     display: flex;
     align-items: center;
@@ -373,7 +391,41 @@ header {
     .header-main-right-search {
       width: 30px;
       height: 30px;
-      margin-left: 47px; }
+      margin-left: 47px;
+      position: relative; }
+      .header-main-right-search .search-open, .header-main-right-search .search-close {
+        cursor: pointer; }
+      .header-main-right-search .search-block {
+        width: 450px;
+        top: -12px;
+        right: 0;
+        position: absolute;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border: 2px solid #F4F6F9;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #fff; }
+        @media only screen and (max-width: 767px) {
+          .header-main-right-search .search-block {
+            left: 0;
+            top: 0;
+            border-radius: 0;
+            right: auto;
+            height: 40px; } }
+        .header-main-right-search .search-block svg {
+          margin: 0 15px; }
+        .header-main-right-search .search-block input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          padding: 0 15px;
+          font-size: 18px;
+          outline: none;
+          box-shadow: none; }
+          .header-main-right-search .search-block input::placeholder {
+            font-size: 18px; }
       @media only screen and (max-width: 992px) {
         .header-main-right-search {
           margin-left: auto; } }
