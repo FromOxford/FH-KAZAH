@@ -774,10 +774,23 @@ header{
     }
   }
 }
+
 .calendar{
   display: flex;
   padding: 0 30px;
   margin: 50px auto 0;
+  &-page{
+    .calendar-body-left{
+      max-width: 500px;
+      @include respond-to(1650px){
+        max-width: 420px;
+      }
+      @include respond-to(1366px){
+        max-width: none;
+      }
+    }
+
+  }
   @include respond-to(767px){
     margin-top: 30px;
   }
@@ -934,6 +947,108 @@ header{
       }
     }
   }
+  &-month{
+    &-slider{
+      max-width: 500px;
+      width: 100%;
+      .slick-prev{
+        top: 66px;
+        left: 90px;
+        @include respond-to(1650px){
+          left: 80px;
+          top: 37px;
+        }
+        z-index: 2;
+        @include respond-to(450px){
+          left: 15px;
+        }
+      }
+      .slick-next{
+        top: 66px;
+        right: 90px;
+        @include respond-to(1650px){
+          top: 37px;
+          right: 80px;
+        }
+        @include respond-to(450px){
+          right: 30px;
+        }
+      }
+       .slick-next:before {
+        content: '';
+        display: block;
+        background: #F4F6F9 url(../images/arrow-next.svg) no-repeat center center;
+         background-position: 10px 6px;
+         width: 34px;
+        height: 34px;
+         border: 1px solid #C8A27B;
+         border-radius: 50%;
+       }
+      .slick-prev:before {
+        content: '';
+        display: block;
+
+        background: #F4F6F9 url(../images/arrow-prev.svg) no-repeat center center;
+        background-position: 8px 6px;
+        width: 34px;
+        height: 34px;
+        border: 1px solid #C8A27B;
+        border-radius: 50%;
+      }
+      @include respond-to(1650px){
+        max-width: 420px;
+      }
+      @include respond-to(1366px){
+        max-width: none;
+        margin-bottom: 10px;
+      }
+    }
+    &-item{
+      background: #F4F6F9;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 55px 40px;
+      @include respond-to(1650px){
+        padding: 30px 15px 20px;
+      }
+    }
+    &-title{
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 110%;
+      text-transform: uppercase;
+      color: #00205C;
+      margin-bottom: 50px;
+    }
+    &-body{
+      display: flex;
+      flex-wrap: wrap;
+      .c-date{
+        width: 54px;
+        height: 42px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        color:  #C4C4C4;
+        user-select: none;
+        &-active{
+          color:#12181F;
+          user-select: auto;
+          cursor: pointer;
+        }
+        &-current{
+          color: #C8A27B;
+          user-select: auto;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+
   &-body{
     display: flex;
     padding: 0 70px 55px;
@@ -946,6 +1061,7 @@ header{
     @include respond-to(500px){
       padding: 0 0px 25px;
     }
+
     &-left{
       display: flex;
       flex-direction: column;
@@ -1129,6 +1245,7 @@ header{
           max-width: 280px;
           width: 100%;
           height: 60px;
+          padding-right:10px;
           justify-content: space-between;
           @include respond-to(1600px){
             max-width: 250px;
@@ -2361,6 +2478,10 @@ footer{
 .calendar-page{
   .calendar-body{
     padding-top: 70px;
+    @include respond-to(1360px){
+      padding-top: 20px;
+    }
+
   }
 
   .calendar{

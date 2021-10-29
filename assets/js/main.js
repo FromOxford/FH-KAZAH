@@ -13,6 +13,15 @@ $( document ).ready(function() {
     })
 
     console.log( "ready!" );
+
+    $('.calendar-month-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: true,
+        swipe: false,
+        dots: false,
+    });
     $('.main-left').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
