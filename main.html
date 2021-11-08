@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css" integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css"/>
     <link rel="stylesheet" type="text/css" href="./vendor/slick/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./vendor/slick/slick/slick-theme.css"/>
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
 
 
     <link rel="shortcut icon" href="favicon.ico">
@@ -35,22 +36,22 @@
             </a>
             <div class="header-main-top">
                 <div class="header-main-left">
-                    <div class="header-main-team">
+                    <a href="#" class="header-main-team">
                         <img src="./assets/images/team-1.svg" alt="">
                         PRO
-                    </div>
-                    <div class="header-main-team">
+                    </a>
+                    <a href="#"  class="header-main-team">
                         <img src="./assets/images/team-2.svg" alt="">
                         JAS
-                    </div>
-                    <div class="header-main-team">
+                    </a>
+                    <a href="#"  class="header-main-team">
                         <img src="./assets/images/team-3.svg" alt="">
                         QYZ
-                    </div>
-                    <div class="header-main-team">
+                    </a>
+                    <a href="#"  class="header-main-team">
                         <img src="./assets/images/team-4.svg" alt="">
                         TUN
-                    </div>
+                    </a>
                 </div>
                 <div class="header-main-right search-right">
                     <div class="header-main-right-row">
@@ -115,7 +116,9 @@
 
                 </div>
                 <div class="header-main-right">
-                    <img class="inhockey" src="./assets/images/Inhockey.svg" alt="">
+                    <a href="#" class="inhockey">
+                        <img  src="./assets/images/Inhockey.svg" alt="">
+                    </a>
                     <div class="lang-toggle">
                        <a href="#" class="lang-toggle-active">
                            RU
@@ -604,8 +607,30 @@
             <p class="media-subtitle">Самые лучшие сейвы в сезоне 2020/2021</p>
             <div class="media-body">
                 <div class="media-body-left">
-                    <video src="./assets/main.mp4" id="video" controls>
-                    </video>
+<!--                    <video src="./assets/main.mp4" id="video" controls>-->
+<!--                    </video>-->
+                    <div class="thumb-wrap">
+                        <iframe src="https://www.youtube.com/embed/fC8QLE-XdJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                        <!--                        id="my-video"-->
+<!--                        class="video-js"-->
+<!--                        controls-->
+<!--                        width="100%"-->
+<!--                        height="100%"-->
+<!--                        preload="auto"-->
+<!--                        poster="MY_VIDEO_POSTER.jpg"-->
+<!--                        data-setup="{}"-->
+<!--                >-->
+<!--                    <source src="./assets/main.mp4" type="video/mp4" />-->
+<!--&lt;!&ndash;                    <source src="MY_VIDEO.webm" type="video/webm" />&ndash;&gt;-->
+<!--                    <p class="vjs-no-js">-->
+<!--                        To view this video please enable JavaScript, and consider upgrading to a-->
+<!--                        web browser that-->
+<!--                        <a href="https://videojs.com/html5-video-support/" target="_blank"-->
+<!--                        >supports HTML5 video</a-->
+<!--                        >-->
+<!--                    </p>-->
+<!--                </video>-->
                     <div class="play-button-wrapper">
                         <div title="Play video" class="play-gif" id="circle-play-b">
                             <!-- SVG Play Button -->
@@ -772,6 +797,7 @@
         </div>
         </div>
     </footer>
+    <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="./vendor/slick/slick/slick.min.js"></script>
