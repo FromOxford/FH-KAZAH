@@ -2760,6 +2760,16 @@ footer {
       border: none;
       padding: 15px 15px;
       margin-top: 20px; } }
+  .players-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media only screen and (max-width: 1200px) {
+      .players-top {
+        align-items: flex-start;
+        flex-direction: column; }
+        .players-top .blue-filter {
+          margin: 20px 0; } }
   .players-title {
     font-weight: bold;
     font-size: 76px;
@@ -2767,6 +2777,9 @@ footer {
     text-transform: uppercase;
     color: #00205C;
     margin-bottom: 10px; }
+    @media only screen and (max-width: 592px) {
+      .players-title {
+        font-size: 58px; } }
   .players-section {
     display: flex;
     flex-direction: column;
@@ -2984,8 +2997,12 @@ footer {
       color: rgba(18, 24, 31, 0.8); }
   .contacts-map {
     margin-left: auto;
+    padding-left: 25px;
     max-width: 1060px;
     max-height: 620px; }
+    @media only screen and (max-width: 1200px) {
+      .contacts-map {
+        padding-left: 0; } }
   .contacts-info {
     display: flex; }
   .contacts .info-item-left {
@@ -3162,3 +3179,75 @@ footer {
         @media only screen and (max-width: 592px) {
           .expluatation-block-top .line {
             display: none; } }
+
+.competitions {
+  padding: 0 30px;
+  margin-top: 100px;
+  margin-bottom: 70px; }
+  @media only screen and (max-width: 992px) {
+    .competitions {
+      padding: 0 15px; } }
+  .competitions-block {
+    width: 100%;
+    background: #F4F6F9;
+    padding: 80px;
+    margin-bottom: 60px;
+    min-height: 407px; }
+    @media only screen and (max-width: 992px) {
+      .competitions-block {
+        padding: 20px; } }
+    .competitions-block-title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 110%;
+      color: #00205C;
+      margin-bottom: 32px; }
+      @media only screen and (max-width: 592px) {
+        .competitions-block-title {
+          font-size: 20px; } }
+    .competitions-block-text {
+      margin-bottom: 40px;
+      display: flex; }
+      .competitions-block-text span {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 110%;
+        color: #00205C;
+        margin-right: 20px;
+        white-space: nowrap; }
+        @media only screen and (max-width: 592px) {
+          .competitions-block-text span {
+            font-size: 20px; } }
+      .competitions-block-text p {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: rgba(18, 24, 31, 0.8); }
+        @media only screen and (max-width: 592px) {
+          .competitions-block-text p {
+            font-size: 20px; } }
+    .competitions-block .image-wrapper {
+      float: left;
+      margin-right: 60px;
+      margin-bottom: 60px; }
+      @media only screen and (max-width: 992px) {
+        .competitions-block .image-wrapper {
+          margin-right: 30px;
+          margin-bottom: 10px; } }
+      @media only screen and (max-width: 592px) {
+        .competitions-block .image-wrapper {
+          float: none;
+          margin-bottom: 30px;
+          margin-right: 0; } }
+      .competitions-block .image-wrapper img {
+        max-width: 311px;
+        max-height: 247px;
+        width: 100%;
+        object-fit: contain; }
+        @media only screen and (max-width: 992px) {
+          .competitions-block .image-wrapper img {
+            max-width: 200px; } }
+        @media only screen and (max-width: 592px) {
+          .competitions-block .image-wrapper img {
+            max-width: 311px;
+            margin: 0 auto; } }

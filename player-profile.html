@@ -8,9 +8,10 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css" integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <link rel="stylesheet" type="text/css" href="./assets/styles/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css" integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css"/>
   <link rel="stylesheet" type="text/css" href="./vendor/slick/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="./vendor/slick/slick/slick-theme.css"/>
+  <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
 
 
   <link rel="shortcut icon" href="favicon.ico">
@@ -35,22 +36,22 @@
     </a>
     <div class="header-main-top">
       <div class="header-main-left">
-        <div class="header-main-team">
+        <a href="#" class="header-main-team">
           <img src="./assets/images/team-1.svg" alt="">
           PRO
-        </div>
-        <div class="header-main-team">
+        </a>
+        <a href="#"  class="header-main-team">
           <img src="./assets/images/team-2.svg" alt="">
           JAS
-        </div>
-        <div class="header-main-team">
+        </a>
+        <a href="#"  class="header-main-team">
           <img src="./assets/images/team-3.svg" alt="">
           QYZ
-        </div>
-        <div class="header-main-team">
+        </a>
+        <a href="#"  class="header-main-team">
           <img src="./assets/images/team-4.svg" alt="">
           TUN
-        </div>
+        </a>
       </div>
       <div class="header-main-right search-right">
         <div class="header-main-right-row">
@@ -78,11 +79,17 @@
             </a>
 
           </div>
-          <a href="#" class="header-main-right-search">
-            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="header-main-right-search">
+            <svg class="search-open" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16.375 14.5H15.3875L15.0375 14.1625C16.2625 12.7375 17 10.8875 17 8.875C17 4.3875 13.3625 0.75 8.875 0.75C4.3875 0.75 0.75 4.3875 0.75 8.875C0.75 13.3625 4.3875 17 8.875 17C10.8875 17 12.7375 16.2625 14.1625 15.0375L14.5 15.3875V16.375L20.75 22.6125L22.6125 20.75L16.375 14.5ZM8.875 14.5C5.7625 14.5 3.25 11.9875 3.25 8.875C3.25 5.7625 5.7625 3.25 8.875 3.25C11.9875 3.25 14.5 5.7625 14.5 8.875C14.5 11.9875 11.9875 14.5 8.875 14.5Z" fill="#12181F"/>
             </svg>
-          </a>
+            <div class="search-block">
+              <input type="text" placeholder="Поиск...">
+              <svg class="search-close" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 11.25L11.25 0.75M0.75 0.75L11.25 11.25L0.75 0.75Z" stroke="#B4BAC0" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -109,7 +116,9 @@
 
       </div>
       <div class="header-main-right">
-        <img class="inhockey" src="./assets/images/Inhockey.svg" alt="">
+        <a href="#" class="inhockey">
+          <img  src="./assets/images/Inhockey.svg" alt="">
+        </a>
         <div class="lang-toggle">
           <a href="#" class="lang-toggle-active">
             RU
@@ -117,7 +126,14 @@
               <path d="M8.4425 0.442383L5 3.87738L1.5575 0.442383L0.5 1.49988L5 5.99988L9.5 1.49988L8.4425 0.442383Z" fill="#C8A27B"/>
             </svg>
           </a>
-          <div class="lang-toggle-dropdown"></div>
+          <div class="lang-toggle-dropdown">
+            <a href="#" class="lang-toggle-item">
+              RU
+            </a>
+            <a href="#" class="lang-toggle-item">
+              EN
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -127,72 +143,14 @@
   <div class="inner">
     <ul class="breadcrumbs-list">
       <li><a class="breadcrumbs-list-item" href="main.html">Главная</a></li>
-      <li><span class="breadcrumbs-list-item" >Соревнования</span></li>
+      <li><a class="breadcrumbs-list-item" href="main.html">Cборные</a></li>
+      <li><span class="breadcrumbs-list-item" >Сергей Амузинский</span></li>
     </ul>
-    <h1>Соревнования</h1>
+    <h1>Сергей Амузинский</h1>
   </div>
 </div>
 <div class="inner">
-  <div class="competitions">
-    <div class="competitions-block">
-      <div class="image-wrapper">
-        <img src="./assets/images/boris.png" alt="">
-      </div>
-      <p class="competitions-block-title">
-        Открытый Республиканский турнир по хоккею с шайбой среди детско-юношеских команд в возрастных группах с 8 до 10 лет.
-      </p>
-      <div class="competitions-block-text">
-        <span>2010 г.р.</span>
-        <p>"Astana" ХК, "Барыс" ХК, "Юность" ХК, "Torpedo" ХК, "Rahimzhan" ХК, "Медведи ХК", "Динамо" ХК, "Юность-Металлург" ХК, "Ertis" ХК, "Gornak" ХК, "Qulager" ХК, "Beibarys" ХК, "Олимп" ХК, "Стрижи" ХК;</p>
-      </div>
-      <div class="competitions-block-text">
-        <span>2011-2012 г.р.</span>
-        <p>
-          ХК "Astana", ХК "Барыс", ХК "Юность", ХК "Torpedo".
-        </p>
-      </div>
-    </div>
-    <div class="competitions-block">
-      <div class="image-wrapper">
-        <img src="./assets/images/boris.png" alt="">
-      </div>
-      <p class="competitions-block-title">
-        Открытый Республиканский турнир по хоккею с шайбой среди детско-юношеских команд в возрастных группах с 8 до 10 лет.
-      </p>
-      <div class="competitions-block-text">
-        <span>2004 г.р.</span>
-        <p>
-          ХК "Astana", ХК "Барыс", ХК "Юность", ХК "Torpedo", ХК "Ertis", ХК "ПСО", ХК "Torpedo";
-        </p>
-      </div>
-      <div class="competitions-block-text">
-        <span>2004 г.р.</span>
-        <p>
-          ХК "Astana", ХК "Барыс", ХК "Юность", ХК "Torpedo", ХК "Rahimzhan", ХК «Сатпаевские волки», ХК "ПСО", ХК «Arlan», ХК «Caspiy»;        </p>
-      </div>
-      <div class="competitions-block-text">
-        <span>2004 г.р.</span>
-        <p>
-          ХК "Astana", ХК "Барыс", ХК "Юность", ХК "Torpedo", ХК «Nomad», ХК "Ertis", ХК «Arlan», ХК «Qulager»;
-        </p>
-      </div>
-      <div class="competitions-block-text">
-        <span>2004 г.р.</span>
-        <p>
-          ХК "Astana", ХК "Барыс", ХК "Юность", ХК "Torpedo", ХК «Nomad», ХК "Ertis", ХК "ПСО", ХК "Gornak", ХК «Стрижи», ХК «Alga»;        </p>
-      </div>
-      <div class="competitions-block-text">
-        <span>2008 г.р.</span>
-        <p>
-          ХК "Astana", ХК "Барыс", ХК "Юность", ХК "Torpedo", ХК «Nomad», ХК «Brigantina», ХК "Rahimzhan", ХК «Туран», ХК «Торнадо», ХК "Юность-Металлург", ХК "Ertis", ХК «Qulager», ХК «Ястребы», ХК «Стрижи», ХК «Олимп», ХК «Beibarys», ХК «Кайсар»;        </p>
-      </div>
-      <div class="competitions-block-text">
-        <span>2009 г.р.</span>
-        <p>
-          ХК "Astana", ХК "Барыс", ХК "Юность", ХК "Torpedo", ХК «Nomad», ХК «Brigantina», ХК "Rahimzhan", ХК "Динамо", ХК "Медведи", ХК «Туран», ХК «Торнадо», ХК "Юность-Металлург", ХК «Ястребы-Сатпаев», ХК "Ertis", ХК "Молния", ХК "Gornak", ХК «Arlan», ХК «Ястребы», ХК «Alga», ХК «Кайсар».        </p>
-      </div>
-    </div>
-  </div>
+
 </div>
 
 <footer>
@@ -257,7 +215,10 @@
     </div>
   </div>
 </footer>
+<script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="./vendor/slick/slick/slick.min.js"></script>
 <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+</html>

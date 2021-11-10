@@ -3218,6 +3218,18 @@ footer{
     padding: 15px 15px;
     margin-top: 20px;
   }
+  &-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond-to(1200px){
+      align-items: flex-start;
+      flex-direction: column;
+      .blue-filter{
+        margin: 20px 0;
+      }
+    }
+  }
   &-title{
     font-weight: bold;
     font-size: 76px;
@@ -3225,6 +3237,9 @@ footer{
     text-transform: uppercase;
     color: #00205C;
     margin-bottom: 10px;
+    @include respond-to(592px){
+      font-size: 58px;
+    }
   }
   &-section{
     display: flex;
@@ -3474,8 +3489,12 @@ footer{
   }
   &-map{
     margin-left: auto;
+    padding-left: 25px;
     max-width: 1060px;
     max-height: 620px;
+    @include respond-to(1200px){
+      padding-left: 0;
+    }
   }
   &-info{
     display: flex;
@@ -3688,6 +3707,87 @@ footer{
     }
     &-bottom{
 
+    }
+  }
+}
+
+.competitions{
+  padding: 0 30px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  @include respond-to(992px){
+    padding: 0 15px;
+  }
+  &-block{
+    width: 100%;
+    background: #F4F6F9;
+    padding: 80px;
+    margin-bottom: 60px;
+    min-height: 407px;
+    @include respond-to(992px){
+      padding: 20px;
+    }
+    &-title{
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 110%;
+      color: #00205C;
+      margin-bottom: 32px;
+      @include respond-to(592px){
+        font-size: 20px;
+      }
+    }
+    &-text{
+      margin-bottom: 40px;
+      display: flex;
+
+      span{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 110%;
+        color: #00205C;
+        margin-right: 20px;
+        white-space: nowrap;
+        @include respond-to(592px){
+          font-size: 20px;
+        }
+      }
+      p{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: rgba(#12181F,0.8);
+        @include respond-to(592px){
+          font-size: 20px;
+        }
+      }
+    }
+    .image-wrapper{
+      float: left;
+      margin-right: 60px;
+      margin-bottom: 60px;
+      @include respond-to(992px){
+        margin-right: 30px;
+        margin-bottom: 10px;
+      }
+      @include respond-to(592px){
+        float: none;
+        margin-bottom: 30px;
+        margin-right: 0;
+      }
+      img{
+        max-width: 311px;
+        max-height: 247px;
+        width: 100%;
+        object-fit: contain;
+        @include respond-to(992px){
+          max-width: 200px;
+        }
+        @include respond-to(592px){
+          max-width: 311px;
+          margin: 0 auto;
+        }
+      }
     }
   }
 }
