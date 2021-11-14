@@ -53,6 +53,8 @@ $( document ).ready(function() {
         infinite: false,
         speed: 300,
         arrows:true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
         slidesToShow: 1,
         centerMode: false,
         variableWidth: true
