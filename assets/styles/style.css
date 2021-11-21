@@ -3125,11 +3125,23 @@ footer {
         height: 56px;
         outline: none;
         box-shadow: none !important;
-        padding: 30px;
+        padding: 0 30px;
         font-weight: normal;
         font-size: 18px;
         line-height: 23px;
         color: rgba(18, 24, 31, 0.8); }
+      .contacts-form .form-section button {
+        margin-top: 10px;
+        width: 320px;
+        height: 56px;
+        text-align: center;
+        border: none;
+        background: rgba(0, 32, 92, 0.8);
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        cursor: pointer; }
       .contacts-form .form-section textarea {
         background: rgba(0, 32, 92, 0.1);
         border: none;
