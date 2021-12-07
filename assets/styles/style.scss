@@ -383,8 +383,35 @@ header{
         flex-direction: column-reverse;
         border-bottom: 1px solid #00205C;
         margin-bottom: 20px;
+        padding: 15px 0;
+      }
+      &-wrap{
+        position: relative;
+        height: 25px;
+        &:hover{
+          .header-main-page-links-wrapped{
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.16);
+            .header-main-page-link{
+              margin-right: 20px;
+              padding-bottom: 10px;
+            }
+          }
+
+        }
+      }
+      &-wrapped{
+        display: none;
+        position: absolute;
+        top: 100%;
+        padding: 10px 15px 0px;
+        left: -15px;
+        background-color: #FFFFFF;
+        z-index: 1;
       }
     }
+
     &-page-link{
       font-weight: normal;
       font-size: 18px;
@@ -392,6 +419,10 @@ header{
       text-decoration: none!important;
       color: #12181F;
       margin-right: 50px;
+      svg{
+        margin-left: 5px;
+        margin-bottom: 3px;
+      }
       &:hover{
         color: #C8A27B;
       }
@@ -977,14 +1008,19 @@ header{
         }
         a{
           font-weight: normal;
-          font-size: 24px;
-          line-height: 24px;
+          font-size: 20px;
+          line-height: 20px;
           text-decoration: none!important;
           color: #12181F;
-          text-transform: uppercase;
+          margin-right: 20px;
+          &:hover{
+            color: #C8A27B;
+          }
+          //text-transform: uppercase;
         }
         svg{
-          margin-left: 15.5px;
+          margin-left: 15px;
+          margin-top: 5px;
         }
       }
     }
@@ -2248,11 +2284,35 @@ footer{
       margin-left: 15px;
     }
   }
-  &-dropdown-inner{
-    display: flex;
+  &:hover{
+    .dropdown-inner{
+      display: flex;
+    }
+  }
+  &-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #12181F;
+    text-decoration: none;
+    margin-bottom: 5px;
+    //border-bottom: 1px solid #12181F;
+    &:hover{
+      color: #C8A27B;
+    }
+  }
+  &-inner{
+    display: none;
     flex-direction: column;
     position: absolute;
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.16);
+    padding: 10px 15px 5px;
+    left: -15px;
+    background-color: #fff;
+    z-index: 1;
   }
+
 }
 .all-news{
   margin-top: 100px;
@@ -2401,6 +2461,7 @@ footer{
 
   .tags-small{
     display: flex;
+    margin-top: 15px;
     margin-bottom: 49px;
     span,a{
       font-weight: 300;
