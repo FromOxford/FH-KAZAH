@@ -310,13 +310,22 @@ header {
     .header-main-page-links-wrap {
       position: relative;
       height: 25px; }
+      @media only screen and (max-width: 767px) {
+        .header-main-page-links-wrap {
+          height: auto; } }
       .header-main-page-links-wrap:hover .header-main-page-links-wrapped {
         display: flex;
         flex-direction: column;
         box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.16); }
         .header-main-page-links-wrap:hover .header-main-page-links-wrapped .header-main-page-link {
           margin-right: 20px;
-          padding-bottom: 10px; }
+          padding-bottom: 10px;
+          margin-bottom: 5px;
+          margin-top: 5px;
+          white-space: nowrap;
+          border-bottom: 1px solid #f3f3f3; }
+          .header-main-page-links-wrap:hover .header-main-page-links-wrapped .header-main-page-link:last-child {
+            border-bottom: none; }
     .header-main-page-links-wrapped {
       display: none;
       position: absolute;
@@ -325,6 +334,11 @@ header {
       left: -15px;
       background-color: #FFFFFF;
       z-index: 1; }
+      @media only screen and (max-width: 767px) {
+        .header-main-page-links-wrapped {
+          position: relative;
+          margin-top: 15px;
+          margin-left: 15px; } }
   .header-main-page-link {
     font-weight: normal;
     font-size: 18px;
@@ -558,7 +572,6 @@ header {
     .main-left .slick-list {
       border-radius: 5px; }
   .main-big-plate {
-    height: 818px;
     width: 100%;
     border-radius: 5px; }
   .main-right {
@@ -1890,9 +1903,15 @@ footer {
     .breadcrumbs {
       min-height: 200px;
       padding: 25px 15px 25px; } }
+  .breadcrumbs a.breadcrumbs-list-item {
+    white-space: nowrap; }
   .breadcrumbs-list {
     display: flex;
     margin-bottom: 21px; }
+    .breadcrumbs-list li {
+      white-space: nowrap; }
+      .breadcrumbs-list li:last-child {
+        white-space: normal; }
     .breadcrumbs-list-item {
       font-weight: 500;
       font-size: 18px;
@@ -1900,6 +1919,10 @@ footer {
       color: #FFFFFF;
       opacity: 0.8;
       text-decoration: none; }
+      @media only screen and (max-width: 592px) {
+        .breadcrumbs-list-item {
+          font-size: 14px;
+          line-height: 17px; } }
       .breadcrumbs-list-item:hover {
         opacity: 1;
         color: #FFFFFF; }
@@ -1918,7 +1941,7 @@ footer {
     color: #FFFFFF; }
     @media only screen and (max-width: 592px) {
       .breadcrumbs h1 {
-        font-size: 40px; } }
+        font-size: 32px; } }
 
 .thumb {
   background-color: #000000;

@@ -388,6 +388,9 @@ header{
       &-wrap{
         position: relative;
         height: 25px;
+        @include respond-to(767px){
+          height: auto;
+        }
         &:hover{
           .header-main-page-links-wrapped{
             display: flex;
@@ -396,12 +399,24 @@ header{
             .header-main-page-link{
               margin-right: 20px;
               padding-bottom: 10px;
+              margin-bottom: 5px;
+              margin-top: 5px;
+              white-space: nowrap;
+              border-bottom: 1px solid #f3f3f3;
+              &:last-child{
+                border-bottom: none;
+              }
             }
           }
 
         }
       }
       &-wrapped{
+        @include respond-to(767px){
+          position: relative;
+          margin-top: 15px;
+          margin-left: 15px;
+        }
         display: none;
         position: absolute;
         top: 100%;
@@ -683,7 +698,7 @@ header{
     }
   }
   &-big-plate{
-    height: 818px;
+    //height: 818px;
     width: 100%;
     border-radius: 5px;
 
@@ -2193,9 +2208,18 @@ footer{
     padding: 25px 15px 25px;
 
   }
+  a.breadcrumbs-list-item{
+    white-space: nowrap;
+  }
   &-list{
     display: flex;
     margin-bottom: 21px;
+    li{
+      white-space: nowrap;
+      &:last-child{
+        white-space: normal;
+      }
+    }
     &-item{
       font-weight: 500;
       font-size: 18px;
@@ -2203,6 +2227,10 @@ footer{
       color: #FFFFFF;
       opacity: 0.8;
       text-decoration: none;
+      @include respond-to(592px){
+        font-size: 14px;
+        line-height: 17px;
+      }
       &:hover{
         opacity: 1;
         color: #FFFFFF;
@@ -2226,8 +2254,7 @@ footer{
     text-transform: uppercase;
     color: #FFFFFF;
     @include respond-to(592px){
-    font-size: 40px;
-
+      font-size: 32px;
     }
   }
 }
