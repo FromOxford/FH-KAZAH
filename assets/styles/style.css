@@ -2741,24 +2741,35 @@ footer {
         width: 100%;
         padding-left: 0px; } }
     .school-right-info {
-      display: flex; }
+      display: flex;
+      flex-direction: column; }
       @media only screen and (max-width: 460px) {
         .school-right-info {
           flex-direction: column; } }
       .school-right-info-left {
-        display: flex;
-        flex-direction: column; }
+        display: flex; }
+        @media only screen and (max-width: 460px) {
+          .school-right-info-left {
+            flex-direction: column; } }
       .school-right-info-right {
-        display: flex;
-        flex-direction: column; }
+        display: flex; }
+        @media only screen and (max-width: 460px) {
+          .school-right-info-right {
+            flex-direction: column; } }
       .school-right-info .info-item {
         display: flex;
-        margin-right: 45px;
-        margin-bottom: 36px; }
+        margin-bottom: 36px;
+        width: 50%;
+        padding-right: 20px; }
+        @media only screen and (max-width: 460px) {
+          .school-right-info .info-item {
+            width: 100%; } }
+        .school-right-info .info-item .title {
+          margin-right: 0; }
         .school-right-info .info-item-left {
           width: 38px;
           flex-shrink: 0; }
-          .school-right-info .info-item-left .img {
+          .school-right-info .info-item-left img {
             margin-right: auto;
             max-width: 24px; }
         .school-right-info .info-item-right {
@@ -3343,8 +3354,6 @@ footer {
         margin-right: 0; }
         .contacts .school-right-info .info-item-left {
           flex-shrink: 0; } }
-  .contacts .school-right-info-right .info-item {
-    margin-right: 15px; }
   .contacts .title {
     font-weight: bold;
     font-size: 24px;
@@ -3844,6 +3853,7 @@ ul.pagination li a:hover:not(.active) {
   bottom: 0;
   display: flex;
   align-items: center;
+  padding: 15px;
   height: 100%;
   width: 100%;
   z-index: 4;
