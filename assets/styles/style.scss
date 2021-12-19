@@ -2424,6 +2424,34 @@ footer{
   }
 
 }
+#lightgallery {
+  .all-news-card{
+    &:hover{
+      .background:before{
+        //visibility: visible;
+        opacity: 1;
+      }
+      .all-news-card-title{
+        color: #C8A27B;
+      }
+    }
+  }
+  .background {
+    z-index: 2;
+
+    &:before {
+      transition: 0.3s;
+      opacity: 0;
+      //visibility: visible;
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background:  rgba(18, 24, 31, 0.5) url("../images/zoom.png") center center no-repeat;
+    }
+  }
+}
 .all-news{
   margin-top: 100px;
   margin-bottom: 130px;
@@ -2435,6 +2463,7 @@ footer{
     margin-bottom: 60px;
     padding: 0 15px;
   }
+
   .dropdown{
     margin-right: 65px;
     @include respond-to(592px){
@@ -2445,6 +2474,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 60px;
+
     @include respond-to(592px){
       margin-bottom: 30px;
       .dropdown{
@@ -2488,6 +2518,7 @@ footer{
       line-height: 120%;
       color: #12181F;
       margin: 30px 0 20px;
+      transition: 0.3s;
       text-decoration: none!important;
       &:hover{
         color: #C8A27B;
