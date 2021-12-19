@@ -82,6 +82,10 @@ table {
   @media only screen and (max-width: 992px) {
     .statistics {
       margin-bottom: 60px; } }
+  @media only screen and (max-width: 767px) {
+    .statistics {
+      padding: 0 15px;
+      margin-right: 0; } }
 
 .stat-table {
   table-layout: fixed; }
@@ -148,6 +152,9 @@ table {
       .stat-table-wrapper {
         padding: 0 15px 15px;
         font-size: 20px; } }
+    @media only screen and (max-width: 767px) {
+      .stat-table-wrapper {
+        padding: 0 10px 10px; } }
   .stat-table td, .stat-table th {
     text-align: center; }
   .stat-table tr {

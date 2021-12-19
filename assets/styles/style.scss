@@ -100,6 +100,10 @@ table {
   @include respond-to(992px){
     margin-bottom: 60px;
   }
+  @include respond-to(767px){
+    padding: 0 15px;
+    margin-right: 0;
+  }
 }
 .stat-table{
   table-layout: fixed;
@@ -190,6 +194,9 @@ table {
     @include respond-to(1200px){
       padding: 0 15px 15px;
       font-size: 20px;
+    }
+    @include respond-to(767px){
+      padding: 0 10px 10px;
     }
 
   }
