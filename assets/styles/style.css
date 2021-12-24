@@ -94,9 +94,12 @@ table {
       width: 50px; } }
   @media only screen and (max-width: 1200px) {
     .stat-table .number {
-      width: 70px; } }
+      width: 50px; } }
   .stat-table.table-teams .team {
     width: 30%; }
+    @media only screen and (max-width: 992px) {
+      .stat-table.table-teams .team {
+        width: 15%; } }
   .stat-table.table-teams td.team {
     font-weight: 600;
     font-size: 24px;
@@ -130,6 +133,9 @@ table {
   .stat-table.table-players .team {
     width: 22%;
     padding: 0 15px; }
+    @media only screen and (max-width: 992px) {
+      .stat-table.table-players .team {
+        width: 17%; } }
   .stat-table.table-players .player {
     width: 22%;
     padding: 0 15px; }
@@ -200,9 +206,14 @@ table {
       display: flex;
       align-items: center; }
       .stat-table .team-wrapper .flag {
-        width: 80px;
-        height: 48px;
+        max-width: 80px;
+        max-height: 100%;
         margin-right: 30px; }
+        @media only screen and (max-width: 992px) {
+          .stat-table .team-wrapper .flag {
+            max-width: 40px;
+            max-height: 100%;
+            margin-right: 10px; } }
         .stat-table .team-wrapper .flag img {
           width: 100%;
           object-fit: cover; }
@@ -211,6 +222,11 @@ table {
         font-size: 18px;
         line-height: 24px;
         color: #12181F; }
+        @media only screen and (max-width: 992px) {
+          .stat-table .team-wrapper span {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 18px; } }
   .stat-table .number svg {
     margin-bottom: 7px;
     margin-left: 4px; }
@@ -2465,6 +2481,13 @@ footer {
 .calendar-filter {
   margin-right: 65px;
   margin-bottom: 30px; }
+  @media only screen and (max-width: 992px) {
+    .calendar-filter {
+      width: 50%;
+      margin-right: 0; } }
+  @media only screen and (max-width: 450px) {
+    .calendar-filter {
+      width: 100%; } }
   .calendar-filter-title {
     display: block;
     font-weight: bold;
@@ -2473,6 +2496,9 @@ footer {
     text-transform: uppercase;
     color: #00205C;
     margin-bottom: 20px; }
+    @media only screen and (max-width: 992px) {
+      .calendar-filter-title {
+        margin-bottom: 10px; } }
 
 .calendar-page .calendar-body {
   padding-top: 70px; }

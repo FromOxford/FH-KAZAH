@@ -114,12 +114,15 @@ table {
   }
   .number {
     @include respond-to(1200px) {
-      width: 70px;
+      width: 50px;
     }
   }
   &.table-teams{
     .team{
       width: 30%;
+      @include respond-to(992px){
+        width: 15%;
+      }
     }
     td.team{
       font-weight: 600;
@@ -166,6 +169,9 @@ table {
     .team{
       width: 22%;
       padding: 0 15px;
+      @include respond-to(992px){
+        width: 17%;
+      }
     }
     .player{
       width: 22%;
@@ -260,9 +266,14 @@ table {
       display: flex;
       align-items: center;
       .flag{
-        width: 80px;
-        height: 48px;
+        max-width: 80px;
+        max-height: 100%;
         margin-right: 30px;
+        @include respond-to(992px){
+          max-width: 40px;
+          max-height: 100%;
+          margin-right: 10px;
+        }
         img{
           width: 100%;
           object-fit: cover;
@@ -273,6 +284,11 @@ table {
         font-size: 18px;
         line-height: 24px;
         color: #12181F;
+        @include respond-to(992px){
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 18px;
+        }
       }
     }
   }
@@ -2887,10 +2903,18 @@ footer{
   display: flex;
   margin-bottom: 30px;
   flex-wrap: wrap;
+
 }
 .calendar-filter{
   margin-right: 65px;
   margin-bottom: 30px;
+  @include respond-to(992px){
+    width: 50%;
+    margin-right: 0;
+  }
+  @include respond-to(450px){
+    width: 100%;
+  }
   &-title{
       display: block;
       font-weight: bold;
@@ -2899,6 +2923,9 @@ footer{
       text-transform: uppercase;
       color: #00205C;
       margin-bottom: 20px;
+    @include respond-to(992px){
+      margin-bottom: 10px;
+    }
   }
 }
 .calendar-page{
